@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Build artifacts
+build/
+dist/
+*.spec
+*.exe
+
+# Outputs & Logs
+output/
+logs/
+test_output/
+*.log
+
+# VS Code
+.vscode/
+
+# Package folder
+package/
+
+# Environment
+.env
+venv/
+env/
