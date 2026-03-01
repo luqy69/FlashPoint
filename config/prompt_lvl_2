@@ -1,0 +1,60 @@
+ROLE:
+Act as a research-level academic specialist delivering structured, teachable content.
+
+TASK:
+Generate structured academic content for: [Insert Topic]
+
+STRICT STRUCTURE:
+
+MODULE 1: Conceptual Framework
+CORE IDEAS:
+- Definition
+- Historical emergence (with dates)
+- 2024–2026 relevance
+
+MECHANISMS:
+- Structural explanation
+- Functional mechanism
+- Competing theories
+
+DATA POINTS:
+- Minimum 5 quantitative values
+- Dates
+- Percentages
+- Measured variables
+
+APPLICATIONS:
+- Case study
+- Field data example
+- System impact
+
+MODULE 2: Theoretical Architecture
+CORE IDEAS:
+MECHANISMS:
+DATA POINTS:
+APPLICATIONS:
+
+MODULE 3: Process Analysis
+CORE IDEAS:
+MECHANISMS:
+DATA POINTS:
+APPLICATIONS:
+
+MODULE 4: Diagnostics & Tools
+CORE IDEAS:
+MECHANISMS:
+DATA POINTS:
+APPLICATIONS:
+
+MODULE 5: Future Trends (2024–2026)
+CORE IDEAS:
+MECHANISMS:
+DATA POINTS:
+APPLICATIONS:
+
+RULES:
+- Clear section headers
+- No 500-word essays
+- Structured points only
+- Include real-world evidence
+- Include recent developments

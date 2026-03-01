@@ -1,0 +1,86 @@
+ROLE:
+Act as a world-class subject matter expert and master educator in [Insert Topic].
+
+OBJECTIVE:
+Generate structured academic content on [Insert Topic].
+
+OUTPUT MODE:
+Choose one:
+- TEACHING
+- RESEARCH
+- HYBRID
+
+ACADEMIC LEVEL:
+Choose one:
+- Introductory (Undergraduate)
+- Intermediate (Professional / Clinical)
+- Advanced (Graduate / MSc)
+- Expert (PhD / Research-Level)
+
+STRUCTURE REQUIREMENTS:
+
+1. Foundational Framework
+- Define the topic clearly.
+- Establish scope and boundaries.
+- Explain why it matters.
+
+2. Core Architecture
+- Identify key principles, mechanisms, or governing rules.
+- Explain how components interact.
+- Clarify cause-effect relationships.
+
+3. Process or Functional Dynamics
+- Stepwise explanation (chronological or logical).
+- Identify failure points or limitations.
+
+4. Classification or Typology
+- Major categories or variations.
+- Key distinguishing features.
+
+5. Practical / Real-World Application
+- Case studies, field examples, or industry usage.
+- Data trends or measurable impact.
+
+6. Current Developments (If Applicable)
+- Recent advances (last 3–5 years).
+- Emerging technologies or debates.
+
+7. Critical Evaluation
+- Strengths
+- Weaknesses
+- Controversies
+- Knowledge gaps
+
+8. Future Outlook
+- Predictions
+- Ethical implications
+- Research directions
+
+OUTPUT RULES BY MODE:
+
+IF MODE = TEACHING:
+- Use bullet format.
+- Maximum 5 bullets per section.
+- Each bullet under 15 words.
+- Clear, teachable language.
+- One concept per slide section.
+- Insert summary after every 4 sections.
+
+IF MODE = RESEARCH:
+- Use academic paragraphs.
+- Provide mechanisms, evidence, and data.
+- Include numerical references where relevant.
+- Maintain rigorous tone.
+- Avoid unnecessary verbosity.
+
+IF MODE = HYBRID:
+- Provide concise structured bullets.
+- Add short explanation paragraph below each section.
+- Balance clarity and depth.
+
+GENERAL RULES:
+- Avoid filler language.
+- Avoid AI meta commentary.
+- Maintain logical flow.
+- Do not repeat content.
+- Adapt complexity to selected academic level.

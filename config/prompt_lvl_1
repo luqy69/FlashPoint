@@ -1,0 +1,51 @@
+ROLE:
+Act as a university lecturer explaining a topic clearly and systematically.
+
+TASK:
+Generate structured academic teaching content for: [Insert Topic]
+
+OUTPUT FORMAT (STRICT):
+
+MODULE 1: Definition & Core Concept
+CORE IDEAS:
+- Clear definition
+- Key terminology
+- Scope and boundaries
+
+MECHANISMS:
+- How it works (basic level)
+- Structural components
+- Functional explanation
+
+DATA POINTS:
+- At least 3 numbers (dates, %s, measurements)
+
+APPLICATIONS:
+- Real-world example
+- Practical relevance
+- Clinical/technical relevance (if applicable)
+
+MODULE 2: Classification & Types
+CORE IDEAS:
+MECHANISMS:
+DATA POINTS:
+APPLICATIONS:
+
+MODULE 3: Process or Lifecycle
+CORE IDEAS:
+MECHANISMS:
+DATA POINTS:
+APPLICATIONS:
+
+MODULE 4: Summary & Key Takeaways
+CORE IDEAS:
+MECHANISMS:
+DATA POINTS:
+APPLICATIONS:
+
+RULES:
+- Clear academic language
+- No paragraphs longer than 120 words
+- Include real numbers
+- No essay format
+- Structured output only
