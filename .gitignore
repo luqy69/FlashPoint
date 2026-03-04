@@ -7,7 +7,6 @@ __pycache__/
 build/
 dist/
 *.spec
-*.exe
 
 # Outputs & Logs
 output/
@@ -18,8 +17,9 @@ test_output/
 # VS Code
 .vscode/
 
-# Package folder
-package/
+# Package output & logs (keep package itself)
+package/output/
+package/logs/
 
 # Environment
 .env

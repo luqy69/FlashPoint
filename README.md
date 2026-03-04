@@ -44,67 +44,37 @@ Make sure Google Chrome is installed on your system. The script will automatical
 
 ## 📖 Usage
 
-### Quick Start (Easiest)
+### Option 1: Run the Executable (Easiest — No Python needed)
 
-**Option 1: Use the batch file** (Windows)
-```bash
-# Just double-click run.bat or run:
-run.bat
-```
+1. Download the `package/` folder or the **FlashPoint_Deploy.zip** from this repository
+2. Extract the zip (if downloaded)
+3. Double-click **`FlashPoint_AI.exe`** to launch the app
+4. Enter your topic, select theme, and let the AI generate your presentation!
 
-The batch file will automatically:
-- Check if dependencies are installed
-- Install them if needed
-- Launch the generator
+> The `package/` folder contains everything you need: the executable, prompt configs, and an output folder.
 
-**Option 2: Manual launch**
-```bash
-python ppt_generator.py
-```
+### Option 2: Run from Source (For developers)
 
-### Basic Usage
-
-1. **Run the script**:
+1. Install dependencies:
+   ```bash
+   pip install --upgrade -r requirements.txt
+   ```
+2. Launch the GUI:
+   ```bash
+   python ppt_wizard.py
+   ```
+   Or the command-line version:
    ```bash
    python ppt_generator.py
    ```
 
-2. **Enter your topic** when prompted:
-   ```
-   📌 Enter presentation topic: Artificial Intelligence
-   ```
+### What happens next
 
-3. **Optional settings**: 
-   - Target slide count (default: 20-25)
-   - Press Enter to use defaults
-
-4. **Browser interaction**:
-   - Chrome will open automatically
-   - If you're not logged into Google/Gemini, log in when prompted
-   - Press Enter in the terminal after logging in
-   - The script will then automatically research and generate content
-
-5. **Wait for completion**:
-   - Research phase (~2-3 minutes)
-   - Content generation (~1-2 minutes)
-   - Visualization creation (~30 seconds)
-   - PowerPoint assembly (~30 seconds)
-
-6. **Output**:
-   - Your presentation will be saved in the `output/` directory
-   - The folder will automatically open when complete
-
-### Example
-
-```bash
-python ppt_generator.py
-
-# Enter topic: "Climate Change and Global Warming"
-# Target slides: 25
-# [Browser opens, Gemini researches topic]
-# [Charts and slides are generated]
-# ✓ Success! Presentation created.
-```
+1. **Enter your topic** — e.g. "Artificial Intelligence in Healthcare"
+2. **Choose slide count & research depth** — Basic, Professional, or Master Thesis
+3. **Select a theme** — 10+ built-in professional themes
+4. **Chrome opens automatically** — logs into Gemini and researches your topic
+5. **Presentation is generated** — saved in the `output/` folder as `.pptx`
 
 ## 📁 Project Structure
 
@@ -150,17 +120,6 @@ Each generated presentation includes:
 6. **References**: Research sources and citations
 7. **Thank You Slide**: Closing slide
 
-## 📊 Visualization Types
-
-The application can generate:
-
-- **Bar Charts**: Comparing categories or metrics
-- **Pie Charts**: Showing distributions and proportions
-- **Line Charts**: Displaying trends over time
-- **Comparison Charts**: Horizontal bars for rankings
-- **Process Diagrams**: Step-by-step workflows
-
-All visualizations use professional color schemes that match the presentation theme.
 
 ## ⚙️ How It Works
 
