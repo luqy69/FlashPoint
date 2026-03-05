@@ -46,12 +46,12 @@ Make sure Google Chrome is installed on your system. The script will automatical
 
 ### Option 1: Run the Executable (Easiest — No Python needed)
 
-1. Download the `package/` folder or the **FlashPoint_Deploy.zip** from this repository
-2. Extract the zip (if downloaded)
+1. Go to the [**Releases**](https://github.com/luqy69/FlashPoint/releases) page and download **FlashPoint_v1.0.zip**
+2. Extract the zip to any folder
 3. Double-click **`FlashPoint_AI.exe`** to launch the app
 4. Enter your topic, select theme, and let the AI generate your presentation!
 
-> The `package/` folder contains everything you need: the executable, prompt configs, and an output folder.
+> The zip contains everything you need: the executable, customizable prompt configs, and an output folder for your presentations.
 
 ### Option 2: Run from Source (For developers)
 
