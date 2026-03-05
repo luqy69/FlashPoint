@@ -196,9 +196,32 @@ class PPTWizard(tk.Tk):
         bottom_separator = tk.Frame(content_container, height=1, bg='#D3D3D3')
         bottom_separator.pack(fill=tk.X, side=tk.BOTTOM, padx=0)
         
-        # Content frame - PACK LAST so it fills remaining space
-        self.content_frame = tk.Frame(content_container, bg='white')
-        self.content_frame.pack(fill=tk.BOTH, expand=True, padx=25, pady=15)
+        # Scrollable content area
+        self.canvas = tk.Canvas(content_container, bg='white', highlightthickness=0)
+        self.scrollbar = ttk.Scrollbar(content_container, orient=tk.VERTICAL, command=self.canvas.yview)
+        self.canvas.configure(yscrollcommand=self.scrollbar.set)
+        
+        self.scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+        self.canvas.pack(fill=tk.BOTH, expand=True, padx=0, pady=0)
+        
+        # Content frame inside canvas
+        self.content_frame = tk.Frame(self.canvas, bg='white')
+        self.canvas_window = self.canvas.create_window((0, 0), window=self.content_frame, anchor='nw')
+        
+        # Resize content frame width to match canvas
+        def on_canvas_configure(event):
+            self.canvas.itemconfig(self.canvas_window, width=event.width)
+        self.canvas.bind('<Configure>', on_canvas_configure)
+        
+        # Update scroll region when content changes
+        def on_frame_configure(event):
+            self.canvas.configure(scrollregion=self.canvas.bbox('all'))
+        self.content_frame.bind('<Configure>', on_frame_configure)
+        
+        # Mouse wheel scrolling
+        def on_mousewheel(event):
+            self.canvas.yview_scroll(int(-1 * (event.delta / 120)), 'units')
+        self.canvas.bind_all('<MouseWheel>', on_mousewheel)
         
     
     def show_step(self, step_num):
@@ -221,6 +244,9 @@ class PPTWizard(tk.Tk):
         # Clear content frame
         for widget in self.content_frame.winfo_children():
             widget.destroy()
+        
+        # Reset scroll position to top
+        self.canvas.yview_moveto(0)
         
         # Show appropriate step content
         if step_num == 0:
