@@ -17,9 +17,10 @@ test_output/
 # VS Code
 .vscode/
 
-# Package output & logs (keep package itself)
-package/output/
+# Package logs (keep package itself)
 package/logs/
+package/output/*
+!package/output/.gitkeep
 
 # Environment
 .env
